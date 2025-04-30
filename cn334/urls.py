@@ -19,4 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ecommerce/', ecom_views.ecommerce_index_view),
+    path('ecommerce/item/<item_id>', ecom_views.ecommerce_index_view)
 ]
